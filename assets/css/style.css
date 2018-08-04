@@ -1,0 +1,223 @@
+/*Set background image and overall font*/
+body {
+	background-image: url(../images/circles-light.png);
+	font-family: Arial, Helvetica, sans-serif;
+	color: #777777; 
+}
+
+/*Set content width to 960px and center*/
+.content {
+	margin: 0 auto;
+	width: 960px;
+}
+
+/*Set heading settings*/
+header {
+	background-color: #ffffff;
+	border-bottom: 3px solid #cccccc;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	height:80px;
+	}
+
+/*Create a Name logo*/
+.logo {
+	background-color: #4aaaa5; /*Teal*/
+	color: #ffffff;
+	float: left;
+	font-size: 24px;
+	height: 50px;
+	margin-top: 15px;
+	padding-top: 15px;
+	text-align: center;
+	width: 250px;
+}
+/*Align pages on navigation toolbar*/
+.links {
+	float: right;
+	height: 20px;
+	margin-top: 50px;
+	width: 300px;
+	}
+
+/*Remove underline on links*/
+a {
+	padding: 20px;
+	text-decoration: none;
+	}
+
+	/* Change text color when hovering over links */
+	a:hover {
+		color: #FF407E; /*compound-harmony color to teal*/
+	}
+/*Remove default block setting of list (to allow horizontal position)*/
+li {
+	display: inline;
+}
+
+/*Create specs for main content - including top and bottom margins*/
+section {
+	background-color: #ffffff;
+	border: 2px solid #dddddd;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	padding: 15px;
+}
+
+h1 {
+	border-bottom: 2px solid #dddddd;
+	color: #4aaaa5;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 24px;
+	padding: 15px;
+}
+
+/* Resize Bio Pic */
+.pic {
+	float: left;
+	height: 240px;
+	width: 210px;
+	margin-right: 20px;
+
+}
+
+/* Make images more transparent when hovering */
+img:hover {
+	opacity: 0.3;
+}
+
+p {
+	line-height: 1.5;
+}
+
+/* Position Images and Image Tags */
+.portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	overflow: auto;
+}
+
+.project-images {
+	margin: 25px 75px 25px 75px;
+	position: relative;
+	}
+
+/* Create and Position Project Image Tags */
+.project-tag {
+	background: #4aaaa5;
+	bottom: 30px;
+	box-sizing: border-box;
+	color: #ffffff;
+	font-size: 24px;
+	height: 40px;
+	padding: 5px;
+	position: absolute;
+	text-align: center;
+	width: 200px;
+}
+
+/* Style form fields */
+
+input {
+	border: 1px solid lightgray;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	width: 100%;
+}
+
+#name {
+	height: 30px;
+}
+
+#email-address {
+	height: 30px;
+}
+
+#message-box {
+	border: 1px solid lightgray;
+	height: 200px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	width: 100%;
+}
+
+#submit {
+	background: #4aaaa5;
+	color: #ffffff;
+	height: 40px;
+	opacity: 0.6;
+	width: 100px;
+}
+
+/* Fade in when hovering on button */
+#submit:hover {
+	opacity: 1.0;
+	background: #FF407E;
+}
+
+/*Fixed/Sticky Footer*/
+footer {
+	background-color: #666666;
+	border-top: 10px solid #4aaaa5;
+	bottom: 0;
+	color: #fff;
+	font-size: 12px;
+	left: 0;
+	margin: 0;
+	position: sticky;
+	text-align: center;
+	width: 100%;
+}
+
+/*Media Queries*/
+
+/* Width at 980px and below */
+@media screen and (max-width: 980px){
+	.content {
+		width: 100%;
+		}
+}
+
+/* Width at 768px and below */
+@media screen and (max-width: 768px){
+	.content {
+		width: 100%;
+	}
+
+/* Adjust margins so project images stay in 2 column format*/
+	.project-images {
+		margin: 25px;
+	}
+}
+
+/* Width at 640px */
+@media screen and (max-width: 640px){
+	.content {
+		width: 100%;
+		}
+	
+/* Stack Logo above Navigation Links */
+	header {
+		height: 120px;
+	}
+	
+	.logo {
+		position: relative;
+		top: -20px;
+		width: 100%;
+	}
+
+	.links {
+		float: none;
+		margin: 0 auto;
+	}
+
+	/* Have bio sit below picture*/
+	.bio {
+		clear: both;
+	}	
+	
+/* Have Portfolio images display in one column*/
+.project-images {
+	margin: 25px 75px 25px 75px;
+}
+}

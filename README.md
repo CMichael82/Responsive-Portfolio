@@ -1,1 +1,3 @@
 # Responsive-Portfolio
+
+Copied the html and css files from assignment 1 and added media queries for the following screen sizes: 980px, 768px, and 640px. The 980px required an adjustment to the content width, but little else. For the 768px, the content width was set to 100% and the margins on the portfolio pictures needed to be decreased in order to maintain a 2 column format. The 640px screen called for the most changes. I had to increase the header height in order to stack the logo above the navigation links. On the About Me page, I had to clear the float on the bio section so it would sit below the picture on a smaller screen. On the portfolio page, the margins on the portfolio pictures were increased again - this time to display as a 1 column layout. 
